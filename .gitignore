@@ -1,0 +1,93 @@
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sublime-project
+*.sublime-workspace
+
+# Project specific - نتائج التحليل
+results/*.json
+results/*.csv
+results/*.html
+reports/*.html
+reports/*.pdf
+logs/*.log
+logs/errors/*.log
+
+# Keep directory structure but ignore files
+results/archives/*
+!results/archives/.gitkeep
+reports/html_reports/*
+!reports/html_reports/.gitkeep
+reports/pdf_reports/*
+!reports/pdf_reports/.gitkeep
+logs/errors/*
+!logs/errors/.gitkeep
+
+# Local configuration
+config/local_settings.py
+.env
+*.local
+*.bak
+*.tmp
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+
+# Secret files
+secrets.py
+config.json
+*.key
+*.pem
+*.crt
