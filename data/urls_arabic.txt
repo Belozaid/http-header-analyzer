@@ -1,0 +1,17 @@
+# Saudi Government Websites
+moe.gov.sa
+my.gov.sa
+moi.gov.sa
+moh.gov.sa
+
+# Saudi Banks
+alrajhibank.com.sa
+sab.com
+riyadbank.com
+anb.com.sa
+
+# Arabic News Websites
+aljazeera.net
+arabnews.com
+alarabiya.net
+skynewsarabia.com
