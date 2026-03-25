@@ -1,0 +1,348 @@
+
+        <!DOCTYPE html>
+        <html dir="rtl">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>📊 تقرير أمان المواقع العربية</title>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Cairo', 'Arial', sans-serif;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    margin: 0;
+                    padding: 20px;
+                    min-height: 100vh;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                .header {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 20px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                }
+                .header h1 {
+                    margin: 0;
+                    color: #333;
+                    font-size: 2.5em;
+                }
+                .header p {
+                    color: #666;
+                    font-size: 1.2em;
+                    margin: 10px 0 0;
+                }
+                .summary {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 20px;
+                    margin-bottom: 30px;
+                }
+                .card {
+                    background: white;
+                    padding: 25px;
+                    border-radius: 15px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                    text-align: center;
+                    transition: transform 0.3s;
+                }
+                .card:hover {
+                    transform: translateY(-5px);
+                }
+                .card h3 {
+                    margin: 0 0 15px;
+                    color: #333;
+                    font-size: 1.3em;
+                }
+                .card .number {
+                    font-size: 2.5em;
+                    font-weight: bold;
+                }
+                .good { color: #4caf50; }
+                .warning { color: #ff9800; }
+                .danger { color: #f44336; }
+                .stats-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+                .stat-item {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    text-align: center;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+                .table-container {
+                    background: white;
+                    border-radius: 15px;
+                    padding: 20px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                    overflow-x: auto;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-family: 'Cairo', sans-serif;
+                }
+                th {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 15px;
+                    font-weight: 600;
+                    font-size: 1em;
+                }
+                td {
+                    padding: 12px;
+                    text-align: center;
+                    border-bottom: 1px solid #ddd;
+                }
+                tr:hover {
+                    background-color: #f8f9fa;
+                }
+                .risk-badge {
+                    padding: 5px 15px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    display: inline-block;
+                    font-size: 0.9em;
+                }
+                .low { background: #c8e6c9; color: #2e7d32; }
+                .medium { background: #fff3e0; color: #ef6c00; }
+                .high { background: #ffebee; color: #c62828; }
+                .status-icon {
+                    font-size: 1.2em;
+                }
+                .footer {
+                    text-align: center;
+                    margin-top: 30px;
+                    color: white;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🔐 تقرير تحليل أمان المواقع العربية</h1>
+                    <p>تاريخ التقرير: 2026-03-18 15:50:57</p>
+                    <p>عدد المواقع المحللة: 12</p>
+                </div>
+
+                <div class="summary">
+                    <div class="card">
+                        <h3>🟢 آمنة</h3>
+                        <div class="number good">5</div>
+                        <p>موقع</p>
+                    </div>
+                    <div class="card">
+                        <h3>🟡 متوسطة</h3>
+                        <div class="number warning">5</div>
+                        <p>موقع</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔴 خطيرة</h3>
+                        <div class="number danger">2</div>
+                        <p>موقع</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div>🔒 HSTS</div>
+                        <div class="number good">7</div>
+                    </div>
+                    <div class="stat-item">
+                        <div>🛡️ X-Frame-Options</div>
+                        <div class="number good">7</div>
+                    </div>
+                    <div class="stat-item">
+                        <div>📝 CSP</div>
+                        <div class="number good">5</div>
+                    </div>
+                    <div class="stat-item">
+                        <div>🍪 كوكيز آمنة</div>
+                        <div class="number good">3</div>
+                    </div>
+                    <div class="stat-item">
+                        <div>✅ SSL صالح</div>
+                        <div class="number good">10</div>
+                    </div>
+                    <div class="stat-item">
+                        <div>⚠️ SSL قريب الانتهاء</div>
+                        <div class="number warning">1</div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>الموقع</th>
+                            <th>DNS</th>
+                            <th>SSL</th>
+                            <th>الأيام المتبقية</th>
+                            <th>HSTS</th>
+                            <th>X-Frame</th>
+                            <th>CSP</th>
+                            <th>الخطورة</th>
+                            <th>التقييم</th>
+                        </tr>
+        
+                        <tr>
+                            <td><strong>moe.gov.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>71</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td>15/100</td>
+                            <td><span class="risk-badge low">🟢 آمن</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>alrajhibank.com.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>120</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">❌</td>
+                            <td>32/100</td>
+                            <td><span class="risk-badge medium">🟡 متوسط</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>my.gov.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>79</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>25/100</td>
+                            <td><span class="risk-badge medium">🟡 متوسط</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>moh.gov.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>261</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td>9/100</td>
+                            <td><span class="risk-badge low">🟢 آمن</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>moi.gov.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">⚠️</td>
+                            <td>25</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>15/100</td>
+                            <td><span class="risk-badge low">🟢 آمن</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>sab.com</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>185</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>16/100</td>
+                            <td><span class="risk-badge low">🟢 آمن</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>riyadbank.com</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>275</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td>50/100</td>
+                            <td><span class="risk-badge high">🔴 خطير</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>anb.com.sa</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>50</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>18/100</td>
+                            <td><span class="risk-badge low">🟢 آمن</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>aljazeera.net</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>N/A</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>29/100</td>
+                            <td><span class="risk-badge medium">🟡 متوسط</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>arabnews.com</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>74</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>32/100</td>
+                            <td><span class="risk-badge medium">🟡 متوسط</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>skynewsarabia.com</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>N/A</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">❌</td>
+                            <td>68/100</td>
+                            <td><span class="risk-badge high">🔴 خطير</span></td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>alarabiya.net</strong></td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">✅</td>
+                            <td>72</td>
+                            <td class="status-icon">❌</td>
+                            <td class="status-icon">✅</td>
+                            <td class="status-icon">❌</td>
+                            <td>32/100</td>
+                            <td><span class="risk-badge medium">🟡 متوسط</span></td>
+                        </tr>
+            
+                    </table>
+                </div>
+                
+                <div class="footer">
+                    <p>تم الإنشاء بواسطة HTTP Header Analyzer © 2026</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        
