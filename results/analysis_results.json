@@ -1,0 +1,109 @@
+{
+  "statistics": {
+    "total": 1,
+    "hsts": 1,
+    "xframe": 0,
+    "csp": 1,
+    "secure_cookies": 0,
+    "ssl_valid": 1,
+    "ssl_expiring_soon": 0,
+    "subdomains_found": 0
+  },
+  "results": [
+    {
+      "url": "moe.gov.sa",
+      "timestamp": "2026-03-25T12:38:27.710754",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": true,
+          "value": "max-age=31536000; includeSubDomains",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": true,
+          "value": "nosniff",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": true,
+          "value": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com onedrive.live.com *.onedrive.live.com;, default-src https: data: 'unsafe-inline' 'unsafe-eval'",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": true,
+          "value": "1;mode=block",
+          "status": "✅",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "cookie_analysis": [
+          {
+            "cookie": "APPLICATION_POOL=!4lGMU+7PY1YElE377osIVpSF0rftKlIuXxg21KERj0...",
+            "secure": "✅",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "TS01bf69eb=018d44caa87f4b48b66e9e3d15b6493ec05213d39099473fe...",
+            "secure": "❌",
+            "httponly": "✅",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "DigiCert Inc",
+        "subject": "*.moe.gov.sa",
+        "expiry_date": "May 28 23:59:59 2026 GMT",
+        "days_remaining": 64,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 69996,
+        "response_time": 0.138432
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 91.195.88.235, 91.195.89.235"
+      },
+      "risk_score": 15
+    }
+  ]
+}

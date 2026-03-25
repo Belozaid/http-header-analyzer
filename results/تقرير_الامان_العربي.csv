@@ -1,0 +1,23 @@
+URL,Status,HSTS,X-Frame-Options,CSP,SSL Valid,SSL Days,Risk Score
+my.gov.sa,403,❌,✅,❌,✅,79,25
+moe.gov.sa,200,✅,❌,✅,✅,71,15
+alrajhibank.com.sa,200,✅,❌,❌,✅,120,32
+moh.gov.sa,200,✅,❌,✅,✅,261,9
+moi.gov.sa,200,✅,✅,✅,⚠️,25,15
+sab.com,200,✅,✅,❌,✅,185,16
+riyadbank.com,200,❌,❌,✅,✅,275,50
+qnb.com,403,❌,✅,❌,✅,218,32
+anb.com.sa,200,✅,✅,✅,✅,50,18
+emiratesnbd.com,403,✅,✅,❌,✅,83,19
+nbk.com,200,✅,✅,❌,✅,74,19
+aljazeera.net,200,✅,✅,❌,❌,N/A,29
+arabnews.com,403,❌,✅,❌,✅,74,32
+cnbcarabia.com,200,❌,❌,❌,❌,N/A,60
+alarabiya.net,403,❌,✅,❌,✅,72,32
+skynewsarabia.com,200,❌,❌,❌,❌,N/A,68
+aitnews.com,403,✅,✅,✅,✅,80,2
+sabq.org,200,✅,❌,❌,✅,78,32
+spa.gov.sa,200,✅,❌,❌,✅,74,29
+akhbaar24.argaam.com,200,❌,❌,❌,✅,56,48
+itida.gov.eg,200,❌,❌,❌,✅,298,31
+tech-wd.com,200,❌,❌,❌,✅,55,36

@@ -1,0 +1,8 @@
+URL,Status,DNS,HSTS,X-Frame-Options,CSP,SSL,SSL Days,Risk Score
+github.com,200,✅,✅,✅,✅,✅,70,17
+bing.com,200,✅,❌,❌,❌,✅,129,57
+example.com,200,✅,❌,❌,❌,✅,50,36
+stackoverflow.com,200,✅,✅,❌,❌,✅,56,32
+wikipedia.org,403,✅,❌,❌,❌,✅,43,36
+google.com,200,✅,❌,✅,❌,✅,54,44
+reddit.com,403,✅,✅,✅,❌,✅,58,17

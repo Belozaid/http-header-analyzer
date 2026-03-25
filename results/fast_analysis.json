@@ -1,0 +1,761 @@
+{
+  "statistics": {
+    "total": 7,
+    "hsts": 3,
+    "xframe": 3,
+    "csp": 1,
+    "secure_cookies": 1,
+    "ssl_valid": 7,
+    "ssl_expiring_soon": 0,
+    "subdomains_found": 0
+  },
+  "results": [
+    {
+      "url": "github.com",
+      "timestamp": "2026-03-25T12:35:49.445901",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": true,
+          "value": "max-age=31536000; includeSubdomains; preload",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": true,
+          "value": "deny",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": true,
+          "value": "nosniff",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": true,
+          "value": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com edge.fullstory.com rs.fullstory.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com www.youtube-nocookie.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com images.ctfassets.net/8aevphvgewt8/; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com assets.ctfassets.net/8aevphvgewt8/ videos.ctfassets.net/8aevphvgewt8/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": true,
+          "value": "0",
+          "status": "✅",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": true,
+          "value": "origin-when-cross-origin, strict-origin-when-cross-origin",
+          "status": "✅",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "github.com",
+        "cookie_analysis": [
+          {
+            "cookie": "_gh_sess=zaUGL9uCPA4L5IFyG6deU2ppcsAtPSldDA%2F51BlWiCQk4hpIN...",
+            "secure": "❌",
+            "httponly": "✅",
+            "samesite": "✅",
+            "samesite_value": "Lax",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "_octo=GH1.1.478679909.1774467353; expires=Thu",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "25 Mar 2027 19:35:53 GMT; domain=.github.com; path=/; secure...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "✅",
+            "samesite_value": "Lax",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "logged_in=no; expires=Thu",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "25 Mar 2027 19:35:53 GMT; domain=.github.com; path=/; HttpOn...",
+            "secure": "❌",
+            "httponly": "✅",
+            "samesite": "✅",
+            "samesite_value": "Lax",
+            "risk": "HIGH"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "Sectigo Limited",
+        "subject": "github.com",
+        "expiry_date": "Jun  3 23:59:59 2026 GMT",
+        "days_remaining": 70,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 566834,
+        "response_time": 0.242104
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 20.233.83.145"
+      },
+      "risk_score": 17
+    },
+    {
+      "url": "bing.com",
+      "timestamp": "2026-03-25T12:35:49.451906",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "cookie_analysis": [
+          {
+            "cookie": "_EDGE_S=F=1&SID=01C4C77109146FB713ECD056081D6E74; path=/; ht...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "_EDGE_V=1; path=/; httponly; expires=Mon",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "19-Apr-2027 19:35:53 GMT; domain=bing.com",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "MUID=3103A827D1FE61D3091ABF00D0F76073; samesite=none; path=/...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "19-Apr-2027 19:35:53 GMT; domain=bing.com",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "MUIDB=3103A827D1FE61D3091ABF00D0F76073; path=/; httponly; ex...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "19-Apr-2027 19:35:53 GMT",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "Microsoft Corporation",
+        "subject": "www.bing.com",
+        "expiry_date": "Aug  1 19:13:44 2026 GMT",
+        "days_remaining": 129,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": null,
+        "content_length": 0,
+        "response_time": 0.383965
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 150.171.28.10, 150.171.27.10"
+      },
+      "risk_score": 57
+    },
+    {
+      "url": "example.com",
+      "timestamp": "2026-03-25T12:35:49.446910",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "cloudflare"
+      },
+      "ssl_info": {
+        "issuer": "SSL Corporation",
+        "subject": "example.com",
+        "expiry_date": "May 14 18:57:50 2026 GMT",
+        "days_remaining": 50,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 528,
+        "response_time": 0.403158
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 104.18.26.120, 104.18.27.120"
+      },
+      "risk_score": 36
+    },
+    {
+      "url": "wikipedia.org",
+      "timestamp": "2026-03-25T12:35:49.450901",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "HAProxy"
+      },
+      "ssl_info": {
+        "issuer": "Let's Encrypt",
+        "subject": "*.wikipedia.org",
+        "expiry_date": "May  7 21:41:31 2026 GMT",
+        "days_remaining": 43,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 403,
+        "content_type": "text/plain",
+        "content_length": 126,
+        "response_time": 0.473813
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 185.15.58.224"
+      },
+      "risk_score": 36
+    },
+    {
+      "url": "stackoverflow.com",
+      "timestamp": "2026-03-25T12:35:49.446910",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": true,
+          "value": "max-age=31536000; includeSubDomains",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "cloudflare",
+        "cookie_analysis": [
+          {
+            "cookie": "prov=e03b6c1b-610d-4c46-a5bd-6aadb58ab95d; expires=Thu",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "25 Mar 2027 19:35:53 GMT; domain=.stackoverflow.com; path=/;...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "Let's Encrypt",
+        "subject": "stackoverflow.com",
+        "expiry_date": "May 20 14:15:01 2026 GMT",
+        "days_remaining": 56,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 421898,
+        "response_time": 0.310368
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 198.252.206.1"
+      },
+      "risk_score": 32
+    },
+    {
+      "url": "reddit.com",
+      "timestamp": "2026-03-25T12:35:49.449917",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": true,
+          "value": "max-age=31536000; includeSubdomains",
+          "status": "✅",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": true,
+          "value": "SAMEORIGIN",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": true,
+          "value": "nosniff",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": true,
+          "value": "1; mode=block",
+          "status": "✅",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "snooserv",
+        "cookie_analysis": [
+          {
+            "cookie": "csv=2; Max-Age=63072000; Domain=.reddit.com; Path=/; Secure;...",
+            "secure": "✅",
+            "httponly": "❌",
+            "samesite": "✅",
+            "samesite_value": "None",
+            "risk": "MEDIUM"
+          },
+          {
+            "cookie": "edgebucket=MfhidMhqNTPtT8FM2J; Domain=reddit.com; Max-Age=63...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "DigiCert Inc",
+        "subject": "*.reddit.com",
+        "expiry_date": "May 22 23:59:59 2026 GMT",
+        "days_remaining": 58,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 403,
+        "content_type": "text/html",
+        "content_length": 189908,
+        "response_time": 0.673998
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 151.101.65.140, 151.101.129.140, 151.101.193.140"
+      },
+      "risk_score": 17
+    },
+    {
+      "url": "google.com",
+      "timestamp": "2026-03-25T12:35:49.443902",
+      "security_headers": {
+        "Strict-Transport-Security": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Protects against SSL Strip attacks"
+        },
+        "X-Frame-Options": {
+          "present": true,
+          "value": "SAMEORIGIN",
+          "status": "✅",
+          "severity": "MEDIUM",
+          "note": "Prevents Clickjacking"
+        },
+        "X-Content-Type-Options": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "MEDIUM",
+          "note": "Prevents MIME sniffing"
+        },
+        "Content-Security-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "HIGH",
+          "note": "Prevents XSS and other attacks"
+        },
+        "X-XSS-Protection": {
+          "present": true,
+          "value": "0",
+          "status": "✅",
+          "severity": "LOW",
+          "note": "XSS protection for older browsers"
+        },
+        "Referrer-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls referrer information"
+        },
+        "Permissions-Policy": {
+          "present": false,
+          "value": null,
+          "status": "❌",
+          "severity": "LOW",
+          "note": "Controls browser permissions"
+        }
+      },
+      "server_info": {
+        "server": "gws",
+        "cookie_analysis": [
+          {
+            "cookie": "__Secure-STRP=AEEP7gIGHzaT_t-8iTWoI30e6lcP0zXG7WsIzp3FmPGbr9...",
+            "secure": "✅",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "25-Mar-2026 19:40:54 GMT; path=/; domain=.google.com; Secure...",
+            "secure": "✅",
+            "httponly": "❌",
+            "samesite": "✅",
+            "samesite_value": "strict",
+            "risk": "MEDIUM"
+          },
+          {
+            "cookie": "AEC=AaJma5tUL6GoO5fJsGzgfDIPUZoVk3l373FU2KFexW9aBkauHpn52-vJ...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "21-Sep-2026 19:35:54 GMT; path=/; domain=.google.com; Secure...",
+            "secure": "✅",
+            "httponly": "✅",
+            "samesite": "✅",
+            "samesite_value": "lax",
+            "risk": "MEDIUM"
+          },
+          {
+            "cookie": "NID=529=dRhAYuatM-Of_Wy-7la7AFISeGM60yAVMYfMIjVGvAavlKCod4tz...",
+            "secure": "❌",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "24-Sep-2026 19:35:54 GMT; path=/; domain=.google.com; HttpOn...",
+            "secure": "❌",
+            "httponly": "✅",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "__Secure-BUCKET=CLYB; expires=Mon",
+            "secure": "✅",
+            "httponly": "❌",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "HIGH"
+          },
+          {
+            "cookie": "21-Sep-2026 19:35:54 GMT; path=/; domain=.google.com; Secure...",
+            "secure": "✅",
+            "httponly": "✅",
+            "samesite": "❌",
+            "samesite_value": "None",
+            "risk": "MEDIUM"
+          }
+        ]
+      },
+      "ssl_info": {
+        "issuer": "Google Trust Services",
+        "subject": "www.google.com",
+        "expiry_date": "May 18 18:21:54 2026 GMT",
+        "days_remaining": 54,
+        "valid": true,
+        "status": "✅"
+      },
+      "redirects": [],
+      "response_info": {
+        "status_code": 200,
+        "content_type": "text/html; charset=ISO-8859-1",
+        "content_length": 81218,
+        "response_time": 0.828098
+      },
+      "dns_info": {
+        "available": true,
+        "message": "DNS successful: 142.250.203.14"
+      },
+      "risk_score": 44
+    }
+  ]
+}
