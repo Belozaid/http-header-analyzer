@@ -39,15 +39,19 @@ python analyzer.py -u google.com
 python analyzer.py -u moe.gov.sa
 
 # Creating an Arabic URL file (for the first time)
+
 python analyzer.py --create-arabic
 
 # Site List Analysis
+
 python analyzer.py -f urls_arabic.txt
 
 # Creating an Arabic HTML report
+
 python analyzer.py -f urls_arabic.txt --arabic-report -o تقرير_الأمان
 
 # Parallel analysis with 10 threads
+
 python analyzer.py -f urls.txt --threads 10 -o  تحليل_سريع
 
 📊 Example of results
@@ -57,30 +61,44 @@ python analyzer.py -f urls.txt --threads 10 -o  تحليل_سريع
 ============================================================
 
 🌐 DNS Availability Check:
+
   ✅ DNS resolved: 91.195.88.235
+
 📝 Added HTTPS: https://moe.gov.sa
 
 ✅ Final URL: https://moe.gov.sa/ar/pages/default.aspx
+
 📊 Status Code: 200
 
 📋 Security Headers Analysis:
+
   ✅ Strict-Transport-Security: max-age=31536000; includeSubDomains
+     
      📝 Protects against SSL Strip attacks
+
   ❌ X-Frame-Options
+
      ⚠️ Missing: Prevents Clickjacking
+
   ✅ X-Content-Type-Options: nosniff
+
      📝 Prevents MIME sniffing
+
   ✅ Content-Security-Policy: frame-ancestors 'self' teams.microsoft.com
+
      📝 Prevents XSS and injection attacks
 
 🍪 Cookie Security Analysis:
+
   🔴 APPLICATION_POOL=!ntg5v6zyZXUbHmj77osIVpSF0rftK... [HIGH RISK]
 
 🔒 SSL Certificate Analysis:
-  • Issuer: DigiCert Inc
-  • Subject: *.moe.gov.sa
-  • Expires: May 28 23:59:59 2026 GMT
-  • Days left: 71 ✅
+
+  1. Issuer: DigiCert Inc
+  2. Subject: *.moe.gov.sa
+  3. Expires: May 28 23:59:59 2026 GMT
+  4. Days left: 71 ✅
 
 📈 Overall Risk Score: 15/100
+
   🟢 LOW RISK - Good security posture
