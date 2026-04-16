@@ -87,24 +87,31 @@ python analyzer.py -f urls.txt --threads 10 -o تحليل_سريع
 🔍 Analyzing: moe.gov.sa
 
 🌐 DNS Availability Check:
+
 ✅ DNS resolved: 91.195.88.235
 
 📝 Added HTTPS: https://moe.gov.sa
+
 ✅ Final URL: https://moe.gov.sa/ar/pages/default.aspx
+
 📊 Status Code: 200
 
 📋 Security Headers Analysis:
 
 ✅ Strict-Transport-Security: max-age=31536000; includeSubDomains
+   
    📝 Protects against SSL Strip attacks
 
 ❌ X-Frame-Options
+
    ⚠️ Missing: Prevents Clickjacking
 
 ✅ X-Content-Type-Options: nosniff
+
    📝 Prevents MIME sniffing
 
 ✅ Content-Security-Policy: frame-ancestors 'self' teams.microsoft.com
+
    📝 Prevents XSS and injection attacks
 
 🍪 Cookie Security Analysis:
@@ -114,9 +121,13 @@ python analyzer.py -f urls.txt --threads 10 -o تحليل_سريع
 🔒 SSL Certificate Analysis:
 
 Issuer: DigiCert Inc
+
 Subject: *.moe.gov.sa
+
 Expires: May 28 23:59:59 2026 GMT
+
 Days left: 71 ✅
 
 📈 Overall Risk Score: 15/100
+
 🟢 LOW RISK - Good security posture
