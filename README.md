@@ -1,8 +1,6 @@
-🔐 HTTP Header Analyzer 
 # 🔐 HTTP Header Analyzer
 
-[![GitHub stars](https://img.shields.io/github/stars/Belozaid/http-header-analyzer)](https://github.com/Belozaid/http-header-analyzer/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/BelozaidE/http-header-analyzer)](https://github.com/Belozaid/http-header-analyzer/issues)
+
 Advanced Tool for HTTP Header Security Analysis and Hidden Route Discovery
 
 📖 About the Project
