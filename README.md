@@ -22,16 +22,20 @@ A requests library for handling HTTP protocol.
 
 1. Download the project
    git clone https://github.com/Belozaid/http-header-analyzer.git
+
    cd http-header-analyzer
 
 2. Install the required libraries
+
    pip install requirements.txt
    
 4. Run the tool
 # Analysis of one site
+
 python analyzer.py -u google.com
 
 #Analysis of a Saudi government website
+
 python analyzer.py -u moe.gov.sa
 
 # Creating an Arabic URL file (for the first time)
