@@ -6,6 +6,7 @@
 Advanced Tool for HTTP Header Security Analysis and Hidden Route Discovery
 
 📖 About the Project
+
 This tool is a comprehensive security scanner script built in Python. It aims to help penetration testers and website administrators examine the security settings in HTTP headers and search for sensitive routing files, while delivering high performance thanks to its parallel processing capabilities.
 
 ✨ Key Features
